@@ -1,0 +1,304 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,300&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.Titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+.Lista1 {
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+}
+.Lista1 ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  font-family: "Times New Roman", Times, serif;
+}
+.Lista1 ul li:hover {
+  background-color: #333333;
+  color: white;
+}
+.Lista1 ul li:hover a {
+  color: white;
+}
+.Lista1 ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.Lista1 ul li a {
+  color: #333333;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+}
+
+.Baner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.493)), url("Imagens/Codigo.png");
+  background-size: cover;
+  height: 650px;
+}
+.Baner h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 7rem;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+.Baner h2 {
+  text-shadow: 1px 1px 1px black;
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.Filmes ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Filmes ul li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding: 10px;
+}
+.Filmes ul li iframe {
+  flex: 1;
+  width: 500px;
+  height: 400px;
+}
+.Filmes ul li a {
+  font-size: 30px;
+}
+
+.Sobre,
+.hobbies,
+.experiencia,
+.Formação,
+.Musicas {
+  height: 400px;
+  margin: auto;
+  display: flex;
+}
+.Sobre header,
+.hobbies header,
+.experiencia header,
+.Formação header,
+.Musicas header {
+  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+  background-color: #333333;
+}
+.Sobre header h3,
+.hobbies header h3,
+.experiencia header h3,
+.Formação header h3,
+.Musicas header h3 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 100;
+}
+.Sobre div,
+.hobbies div,
+.experiencia div,
+.Formação div,
+.Musicas div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  padding: 10px;
+  background-color: #eee;
+  padding-right: 50px;
+}
+.Sobre div p,
+.hobbies div p,
+.experiencia div p,
+.Formação div p,
+.Musicas div p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.experiencia, .Musicas {
+  flex-direction: row-reverse;
+}
+.experiencia div, .Musicas div {
+  background-color: white;
+}
+
+.Musicas div {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.Musicas div ul {
+  display: flex;
+  list-style: none;
+}
+.Musicas div ul li:hover {
+  background-color: #333333;
+}
+.Musicas div ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-width: 100px;
+  margin: 1px;
+  background-color: #727272;
+  cursor: pointer;
+}
+.Musicas div ul li a {
+  text-align: center;
+  color: white;
+}
+
+.Contatos {
+  background-color: silver;
+}
+.Contatos ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+}
+.Contatos ul li {
+  padding: 10px;
+}
+.Contatos ul li a {
+  text-decoration: none;
+}
+
+.filmes header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #727272;
+}
+.filmes header h3 {
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+}
+.filmes div ul {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.filmes div ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+}
+.filmes div ul li iframe {
+  width: 100%;
+  border: none;
+}
+.filmes div ul li a {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  width: 100%;
+  padding: 10px;
+  background-color: #333333;
+  color: white;
+}
+
+.Contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: white;
+}
+.Contatos header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #727272;
+}
+.Contatos header h3 {
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+}
+.Contatos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.Contatos div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.Contatos div ul li a:hover {
+  color: #07073b;
+}
+
+.Agradecimento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  height: 200px;
+  font-size: 13px;
+  color: #727272;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
